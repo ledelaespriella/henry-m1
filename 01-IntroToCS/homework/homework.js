@@ -2,7 +2,7 @@
 
 function BinarioADecimal(num) {
   // tu codigo aca
-  var BinToDecimalManual = (num) => {
+  const BinToDecimalManual = (num) => {
     var temp = num.split("");
     const n = num.length;
     var exp = [];
@@ -22,10 +22,20 @@ function BinarioADecimal(num) {
 
 function DecimalABinario(num) {
   // tu codigo aca
+  const DtoB = (num) => {
+    bin = ""
+    while (num > 0) {
+      bin = num % 2 + bin;
+      num = Math.floor(num / 2);
+    }
+    return bin;
+  }
+
+  // return DtoB(num);
   return num.toString(2);
 }
 
-DecimalABinario(4);
+console.log(DecimalABinario(4));
 
 module.exports = {
   BinarioADecimal,
