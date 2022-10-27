@@ -20,12 +20,14 @@ function BinarioADecimal(num) {
   return parseInt(num, 2);
 }
 
+console.log(BinarioADecimal("10101"));
+
 function DecimalABinario(num) {
   // tu codigo aca
   const DtoB = (num) => {
-    bin = ""
+    var bin = ""
     while (num > 0) {
-      bin = num % 2 + bin;
+      bin =(num % 2) + bin ;
       num = Math.floor(num / 2);
     }
     return bin;
@@ -35,7 +37,8 @@ function DecimalABinario(num) {
   return num.toString(2);
 }
 
-console.log(DecimalABinario(4));
+console.log(DecimalABinario(21));
+
 
 module.exports = {
   BinarioADecimal,
