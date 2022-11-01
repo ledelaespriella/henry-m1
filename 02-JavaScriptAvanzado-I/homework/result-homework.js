@@ -74,9 +74,9 @@ const ejercicio6 = () => {
   console.log(7 / 0);
   console.log({}[0]);
   console.log(parseInt("09"));
-  console.log(5 && 2);
+  console.log(5 && 2); //si devuelve true imprime el 2
   console.log(2 && 5);
-  console.log(5 || 0);
+  console.log(5 || 0); //devuelve aquel que sea true, y la izquierda
   console.log(0 || 5);
   console.log([3] + [3] - [10]);
   console.log(3 > 2 > 1);
@@ -148,7 +148,7 @@ const ejercicio10 = () => {
 // ejercicio3();
 // ejercicio4();
 // ejercicio5();
-// ejercicio6();
+ejercicio6();
 // ejercicio7();
 // ejercicio8();
 // ejercicio9();
